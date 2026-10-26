@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PUGAZH NILA — Premium Luxury Boutique V1
 
 A full-stack starter for an Indian boutique storefront built with React + Vite, Express, MongoDB/Mongoose, and a responsive luxury UI.
@@ -73,3 +74,7 @@ This is a runnable V1 starter, not a claim of legal certification or a fully aud
 
 ## Official logo
 The supplied PUGAZH NILA Boutique logo has been added to the header and footer, with an emblem favicon. Logo assets are in `client/public/images/`.
+=======
+# PUGAZH_NILA_V1
+Pugazh Nila Boutique Website
+>>>>>>> a25e365d791a3c564c6a6f3d9e6559cf84a64032
