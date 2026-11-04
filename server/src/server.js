@@ -8,6 +8,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import crypto from "node:crypto";
 import Razorpay from "razorpay";
+import { connectDB } from "./db.js";
 
 dotenv.config();
 const app = express();
@@ -15,6 +16,14 @@ app.use(helmet());
 app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:5173" }));
 app.use(express.json({ limit: "1mb" }));
 app.use("/api", rateLimit({ windowMs: 15 * 60 * 1000, limit: 300, standardHeaders: true, legacyHeaders: false }));
+app.use(async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (error) {
+    next(error);
+  }
+});
 
 const { Schema, model } = mongoose;
 const userSchema = new Schema({
