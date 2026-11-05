@@ -4,7 +4,7 @@ import { BrowserRouter, Link, NavLink, Route, Routes, useNavigate, useParams } f
 import { Search, UserRound, Heart, ShoppingBag, Menu, X, ArrowRight, Sparkles, Instagram, Mail, ChevronDown, Check, SlidersHorizontal } from "lucide-react";
 import "./styles.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://pugazh-nila-v1-uy6a.vercel.app/api";
 const Store = createContext(null);
 const fallbackProducts = [
   { _id:"demo1", name:"Emerald Kanjivaram Silk Saree", sku:"PN-SAR-001", category:"Sarees", description:"A statement silk saree for celebrations, finished with a traditional gold-tone border.", price:12990, salePrice:11990, images:["https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85"], colors:["Emerald","Wine"], sizes:["Free Size"], stock:8, fabric:"Silk blend", occasion:"Wedding", featured:true, bestseller:true },
